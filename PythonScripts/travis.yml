@@ -1,0 +1,15 @@
+language: python
+python:
+  - "3.6"
+cache: pip
+install:
+  - pip3 install --upgrade pip
+  - pip3 install opencv-python
+  - pip3 install pandas
+  - pip3 install tensorflow-object-detection-api
+  - pip3 install tensorflow==1.14.0
+  - pip3 install matplotlib
+  - git clone https://github.com/tensorflow/models
+
+script:
+  - ./runtest.sh
