@@ -1,0 +1,13 @@
+{
+	"name":"ssd_out_",
+	"version":1.0,
+	"step10":{
+		"module":false,
+		"app_path":"../models/research/object_detection/model_main.py",
+		"args":{
+			"--logdir":"./export/",
+			"--train_dir":"./",
+			"--pipeline_config_path":"../../PreModels/SSD/pipeline2.config"
+		}
+	}
+}
